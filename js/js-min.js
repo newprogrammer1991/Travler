@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){$(".collapsed").click(function(){$(".collapse").collapse(toggle=!1)})});
