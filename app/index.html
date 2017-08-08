@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travler</title>
+    <!-- build:css css/font-awesome.min.css -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- endbuild -->
+    <!-- build:css css/style-min.css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- endbuild -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 header_logo logo">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48"
+                         height="51" viewBox="0 0 48 51">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: #8038c2;
+                                    fill-rule: evenodd;
+                                }
+                            </style>
+                            <filter id="filter" x="304" y="41" width="48" height="51" filterUnits="userSpaceOnUse">
+                                <feOffset result="offset" dy="1" in="SourceAlpha"/>
+                                <feGaussianBlur result="blur"/>
+                                <feFlood result="flood" flood-color="#fff"/>
+                                <feComposite result="composite" operator="in" in2="blur"/>
+                                <feBlend result="blend" in="SourceGraphic"/>
+                                <feImage preserveAspectRatio="none" x="304" y="41" width="48" height="50" result="image"
+                                         xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDgiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA0OCA1MCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgb3BhY2l0eTogMC4zOwogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50KTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iOC4zNzgiIHkxPSI1MCIgeDI9IjM5LjYyMiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZmIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI0OCIgaGVpZ2h0PSI1MCIvPgo8L3N2Zz4K"/>
+                                <feComposite result="composite-2" operator="in" in2="SourceGraphic"/>
+                                <feBlend result="blend-2" mode="overlay" in2="blend"/>
+                            </filter>
+                        </defs>
+                        <path class="cls-1"
+                              d="M348.5,77.07a23.5,23.5,0,0,0-1.712-27.116,24.211,24.211,0,0,0-33.719-3.81,23.544,23.544,0,0,0-3.853,33.336,24.379,24.379,0,0,0,18.875,8.946,23.934,23.934,0,0,0,7.924-1.338l10.435,3.75a2.738,2.738,0,0,0,2.638-.437,2.679,2.679,0,0,0,.976-2.459Zm-5.423.389,0.98,6.813L337.188,81.8a3.98,3.98,0,0,0-2.3-.03,18.45,18.45,0,0,1-6.816,1.292h0a18.887,18.887,0,0,1-14.619-6.923,18.222,18.222,0,0,1,2.983-25.8,18.742,18.742,0,0,1,26.1,2.949,18.122,18.122,0,0,1,.836,21.74A2.669,2.669,0,0,0,343.072,77.459ZM324.664,50.14a2.713,2.713,0,0,0-1.1.23,18.422,18.422,0,0,0-10.127,11.078,2.635,2.635,0,0,0,.162,2.046,2.682,2.682,0,0,0,1.574,1.333,2.722,2.722,0,0,0,3.422-1.718,13.029,13.029,0,0,1,7.164-7.834,2.672,2.672,0,0,0,1.384-3.535A2.716,2.716,0,0,0,324.664,50.14Z"
+                              transform="translate(-304 -41)"/>
+                    </svg>
+                    <span class="logo_text">travler</span>
+                    <span class="logo_tip">Get the advice you nedd about travel</span>
+                </a>
+            </div>
+            <div class="col-sm-6 hidden-xs">
+                <div class="header_navbar-second pull-right">
+                    <ul class="nav navbar-nav">
+                        <li class="pull-left">
+                            <form class="navbar-form navbar-left" role="search">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search something here">
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav nav_main">
+                    <li>
+                        <a href="#" class="text-center">
+                            <span><i class="fa fa-globe fa-2x"></i></span>
+                            Travel Guide
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-center">
+                            <span><i class="fa fa-paper-plane-o fa-2x"></i></span>
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-center">
+                            <span><i class="fa fa-file-text-o fa-2x"></i></span>
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-center">
+                            <span><i class="fa fa-map-marker fa-2x"></i></span>
+                            The Tour
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-center">
+                            <span><i class="fa fa-globe fa-2x"></i></span>
+                            How to
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-center">
+                            <span><i class="fa fa-file-text-o fa-2x"></i></span>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="hero-image">
+</div>
+<div class="anywhere">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2> Anywhere, anytime, where here to help.</h2>
+                <h5>And we mean that.</h5>
+            </div>
+            <div class="col-md-12">
+                <img class="img-responsive" src="img/map.png">
+            </div>
+
+            <div class="col-md-4">
+                <h3>Save Time</h3>
+                <p class="lead">Lets throw a trackie dacks also it'll be gutta. You little ripper avos flamin lets throw
+                    a lizard
+                    drinking. Gutful of jug where as busy as a big smoke. Grab us a billy as cunning as a bull bar. As
+                    cunning as a bonzer flamin as stands out like cubby house. As cross as a mate no dramas as cunning
+                    as a bonzer. Gutful of kindie flamin as cross as a grundies. Lets throw a </p>
+            </div>
+            <div class="col-md-4">
+                <h3>Win over the team</h3>
+                <p class="lead">As cunning as a bonzer flamin as stands out like cubby house. As cross as a mate no
+                    dramas as cunning
+                    as a bonzer. Gutful of kindie flamin as cross as a grundies. Lets throw a strides also as cross as a
+                    thingo.
+                    Built like a old fella no dramas grab us a ten clicks away.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Design Features</h3>
+                <p class="lead">Built like a old fella no dramas grab us a ten clicks away. Lets get some digger when
+                    she'll be right
+                    metho. As cross as a no dramas as cunning as a barrack.
+                    A old fella no dramas grab us a ten clicks away. Lets get some digger when she'll be right metho. As
+                    cross as a no dramas as cunning as a barrack.</p>
+            </div>
+            <div></div>
+        </div>
+    </div>
+</div>
+<div class="screen hidden-xs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"></div>
+        </div>
+    </div>
+</div>
+<div class="team">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2>A humble Team we are</h2>
+                <h5>We’ll some of us anyways</h5>
+            </div>
+            <div class="col-md-12">
+                <div class="col-md-3 col-xs-6 team1">
+                    <a href="#" class="text-center">
+                        <div class="team_img-box">
+                            <img class="img-responsive" src="img/team-photo1.png">
+                        </div>
+                    </a>
+                    <strong class="team-name">Josh Jansen</strong>
+                </div>
+                <div class="col-md-3 col-xs-6 team2">
+                    <a href="#" class="text-center">
+                        <div class="team_img-box">
+                            <img class="img-responsive" src="img/team-photo2.jpg">
+                        </div>
+                    </a>
+                    <strong class="team-name">Blaz Robar</strong>
+                    <span class="team_post">
+                        Designer
+                    </span>
+                </div>
+                <div class="col-md-3  col-xs-6  team3">
+                    <a href="#" class="text-center">
+                        <div class="team_img-box">
+                            <img class="img-responsive" src="img/team-photo3.jpg">
+                        </div>
+                    </a>
+                    <strong class="team-name">James Brown</strong>
+                    <span class="team_post">Developer</span>
+                </div>
+                <div class="col-md-3 col-xs-6 team4">
+                    <a href="#" class="text-center">
+                        <div class="team_img-box">
+                            <img class="img-responsive" src="img/team-photo4.jpg">
+                        </div>
+                    </a>
+
+                    <strong class="team-name">Skeletor</strong>
+                    <span class="team_post">Administration</span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="text-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="text-box_container">
+                    <span class="text-center">
+                        <i class="glyphicon glyphicon-plus"></i>
+                    </span>
+                    <h2 class="text-box-title">
+                        Winning Design Awards
+                    </h2>
+                    <p class="text-box-prev">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus.
+                        Pellentesque
+                        ullamcorper mauris vitae sapien bibendum tincidunt. Check leo dignissim +
+                    </p>
+                    <p class="text-box-main">
+                        Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum
+                        consectetur
+                        iaculis est, at dapibus purus malesuada vitae. Mauris sollicitudin aliquam scelerisque.
+                        Vestibulum
+                        ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec et mi
+                        sem.
+                        Duis
+                        tristique elementum tristique. Sed ac magna quis erat sagittis suscipit. Phasellus
+                        faucibus
+                        rhoncus
+                        massa, non laoreet lorem fringilla non.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="text-box_container">
+                    <span class="text-center">
+                        <i class="glyphicon glyphicon-plus"></i>
+                    </span>
+                    <h2 class="text-box-title">
+                        Winning Design Awards
+                    </h2>
+                    <p class="text-box-prev">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus.
+                        Pellentesque
+                        ullamcorper mauris vitae sapien bibendum tincidunt. Check leo dignissim +
+                    </p>
+                    <p class="text-box-main">
+                        Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum
+                        consectetur
+                        iaculis est, at dapibus purus malesuada vitae. Mauris sollicitudin aliquam scelerisque.
+                        Vestibulum
+                        ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec et mi
+                        sem.
+                        Duis
+                        tristique elementum tristique. Sed ac magna quis erat sagittis suscipit. Phasellus
+                        faucibus
+                        rhoncus
+                        massa, non laoreet lorem fringilla non.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-12 hidden-xs">
+                <div class="text-box_container">
+                    <h2 class="text-box-title">
+                        A full col text box sits nicely like this
+                    </h2>
+                    <p class="text-box-prev">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus.
+                        Pellentesque
+                        ullamcorper mauris vitae sapien bibendum tincidunt. Check leo dignissim +
+                    </p>
+                    <p class="text-box-main">
+                        Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum
+                        consectetur
+                        iaculis est, at dapibus purus malesuada vitae. Mauris sollicitudin aliquam scelerisque.
+                        Vestibulum
+                        ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec et mi
+                        sem.
+                        Duis
+                        tristique elementum tristique. Sed ac magna quis erat sagittis suscipit. Phasellus
+                        faucibus
+                        rhoncus
+                        massa, non laoreet lorem fringilla non.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer_widget1 clearfix">
+                <div class="col-sm-6 col-xs-6 hidden-xs footer_logo logo">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48"
+                             height="51" viewBox="0 0 48 51">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #ffffff;
+                                        fill-rule: evenodd;
+                                    }
+                                </style>
+                                <filter id="filter" x="304" y="41" width="48" height="51" filterUnits="userSpaceOnUse">
+                                    <feOffset result="offset" dy="1" in="SourceAlpha"/>
+                                    <feGaussianBlur result="blur"/>
+                                    <feFlood result="flood" flood-color="#fff"/>
+                                    <feComposite result="composite" operator="in" in2="blur"/>
+                                    <feBlend result="blend" in="SourceGraphic"/>
+                                    <feImage preserveAspectRatio="none" x="304" y="41" width="48" height="50"
+                                             result="image"
+                                             xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDgiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA0OCA1MCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgb3BhY2l0eTogMC4zOwogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50KTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iOC4zNzgiIHkxPSI1MCIgeDI9IjM5LjYyMiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZmIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI0OCIgaGVpZ2h0PSI1MCIvPgo8L3N2Zz4K"/>
+                                    <feComposite result="composite-2" operator="in" in2="SourceGraphic"/>
+                                    <feBlend result="blend-2" mode="overlay" in2="blend"/>
+                                </filter>
+                            </defs>
+                            <path class="cls-1"
+                                  d="M348.5,77.07a23.5,23.5,0,0,0-1.712-27.116,24.211,24.211,0,0,0-33.719-3.81,23.544,23.544,0,0,0-3.853,33.336,24.379,24.379,0,0,0,18.875,8.946,23.934,23.934,0,0,0,7.924-1.338l10.435,3.75a2.738,2.738,0,0,0,2.638-.437,2.679,2.679,0,0,0,.976-2.459Zm-5.423.389,0.98,6.813L337.188,81.8a3.98,3.98,0,0,0-2.3-.03,18.45,18.45,0,0,1-6.816,1.292h0a18.887,18.887,0,0,1-14.619-6.923,18.222,18.222,0,0,1,2.983-25.8,18.742,18.742,0,0,1,26.1,2.949,18.122,18.122,0,0,1,.836,21.74A2.669,2.669,0,0,0,343.072,77.459ZM324.664,50.14a2.713,2.713,0,0,0-1.1.23,18.422,18.422,0,0,0-10.127,11.078,2.635,2.635,0,0,0,.162,2.046,2.682,2.682,0,0,0,1.574,1.333,2.722,2.722,0,0,0,3.422-1.718,13.029,13.029,0,0,1,7.164-7.834,2.672,2.672,0,0,0,1.384-3.535A2.716,2.716,0,0,0,324.664,50.14Z"
+                                  transform="translate(-304 -41)"/>
+                        </svg>
+                        <span class="logo_text">travler</span>
+                        <span class="logo_tip">Get the advice you nedd about travel</span>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <div class="navbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Staff</a></li>
+                            <li><a href="#">Articles</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_widget2 clearfix">
+                <div class="col-sm-6 col-xs-12">
+                    <p>
+                        Trent from punchy digger bloody gutful of mokkies. Get a dog up ya fair dinkum mate as
+                        cross as
+                        a
+                        flake. Stands out like a bluey flamin stands out like a pot. As stands out like
+                        christmas to
+                        grab us
+                        a ugg boots. She'll be right buckley's chance my as stands out like divvy van. It'll be
+                        smokes
+                        trent
+                        from punchy chewie.
+                    </p>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <div class="navbar">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="#">
+                                    <span><i class="fa fa-twitter"></i></span>Twitter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span><i class="fa fa-facebook"></i></span>Facebook
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span><i class="fa fa-rss"></i></span> Rss
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span><i class="fa fa-envelope-o"></i></span>Mail
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 hidden-xs text-left">
+                    <p>
+                        As cross as a hoon my built like a op shop. We're going bored sh*tless heaps she'll be right
+                        budgie
+                        smugglers. Grab us a durry mate she'll be right dunny rat. She'll be right larrikin with
+                        skite. As
+                        stands out like kero it'll be truckie.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- build:js js/jquery-3.2.1.min.js -->
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<!-- endbuild -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- build:js js/js-min.js -->
+<script type="text/javascript" src="js/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>

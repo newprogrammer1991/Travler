@@ -1,0 +1,27 @@
+.linkanimation() {
+
+  &:after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s ease-out;
+  }
+  &:hover:after {
+    width: 100%;
+    background-color: @lilac;
+  }
+}
+
+.container-icon(@top:0,@left:0) {
+  position: absolute;
+  top: @top;
+  left: @left;
+  width: 30px;
+  height: 30px;
+  background-color: @lilac;
+
+}
+
+

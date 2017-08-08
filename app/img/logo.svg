@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="51" viewBox="0 0 48 51">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #8038c2;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="304" y="41" width="48" height="51" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="1" in="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+      <feImage preserveAspectRatio="none" x="304" y="41" width="48" height="50" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDgiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA0OCA1MCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgb3BhY2l0eTogMC4zOwogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50KTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iOC4zNzgiIHkxPSI1MCIgeDI9IjM5LjYyMiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZmIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI0OCIgaGVpZ2h0PSI1MCIvPgo8L3N2Zz4K"/>
+      <feComposite result="composite-2" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend-2" mode="overlay" in2="blend"/>
+    </filter>
+  </defs>
+  <path class="cls-1" d="M348.5,77.07a23.5,23.5,0,0,0-1.712-27.116,24.211,24.211,0,0,0-33.719-3.81,23.544,23.544,0,0,0-3.853,33.336,24.379,24.379,0,0,0,18.875,8.946,23.934,23.934,0,0,0,7.924-1.338l10.435,3.75a2.738,2.738,0,0,0,2.638-.437,2.679,2.679,0,0,0,.976-2.459Zm-5.423.389,0.98,6.813L337.188,81.8a3.98,3.98,0,0,0-2.3-.03,18.45,18.45,0,0,1-6.816,1.292h0a18.887,18.887,0,0,1-14.619-6.923,18.222,18.222,0,0,1,2.983-25.8,18.742,18.742,0,0,1,26.1,2.949,18.122,18.122,0,0,1,.836,21.74A2.669,2.669,0,0,0,343.072,77.459ZM324.664,50.14a2.713,2.713,0,0,0-1.1.23,18.422,18.422,0,0,0-10.127,11.078,2.635,2.635,0,0,0,.162,2.046,2.682,2.682,0,0,0,1.574,1.333,2.722,2.722,0,0,0,3.422-1.718,13.029,13.029,0,0,1,7.164-7.834,2.672,2.672,0,0,0,1.384-3.535A2.716,2.716,0,0,0,324.664,50.14Z" transform="translate(-304 -41)"/>
+</svg>

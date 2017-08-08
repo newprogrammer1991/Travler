@@ -1,0 +1,287 @@
+@import "../../node_modules/bootstrap/less/bootstrap";
+@import "variables";
+@import "mixin";
+@import "slick";
+@import "slick-theme";
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+.header {
+  background-color: @grey;
+  padding-top: 40px;
+  position: relative;
+
+  .navbar-default {
+    background-color: @grey;
+    transform: translateY(30px);
+  }
+  .navbar-collapse {
+    padding: 0;
+  }
+  .header_navbar-second {
+    padding-top: 16px;
+  }
+  .nav_main {
+    float: none;
+    li {
+      position: relative;
+      width: ~'calc(100%/6)';
+      border-left: 1px solid rgb(212, 212, 212);;
+      background-image: -moz-linear-gradient(90deg, rgb(215, 215, 215) 0%, rgb(255, 255, 255) 100%);
+      box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.16);
+      :last-child {
+        margin-right: 0;
+      }
+      span {
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+    li:hover {
+      z-index: 1;
+      transform: scale(1.2);
+      background-color: white;
+      a {
+        color: @lilac;
+      }
+    }
+  }
+}
+
+.logo a {
+  svg {
+    position: absolute;
+    top: 14px;
+    .cls-1 {
+      fill: @lilac;
+    }
+  }
+  display: block;
+  text-decoration: none;
+  color: @lilac;
+}
+
+.logo_tip, .logo_text {
+  display: block;
+  margin-left: 55px;
+}
+
+.logo_text {
+  font-size: 50px;
+}
+
+.logo_tip {
+  color: #7D7D7D;
+  margin-top: -17px;
+
+}
+
+.hero-image {
+  background-image: url("../img/main-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 530px;
+  background-position: center;
+}
+
+.anywhere {
+  padding-top: 50px;
+  background-color: @dark-grey;
+  color: white;
+
+  h3,h5 {
+    color: @lilac;
+  }
+}
+
+.screen {
+  background-color: @dark-grey;
+  background-image: url("../img/screen.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 520px;
+}
+
+.team {
+  padding-top: 50px;
+  background-color: @grey;
+  .img-responsive{
+    margin: auto;
+  }
+  h5 {
+    color: @lilac;
+  }
+}
+
+.team-name {
+  display: block;
+}
+
+.text-box {
+  background-color: @grey;
+  border-bottom: 2px solid @lilac;
+
+}
+
+.text-box_container {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 90px;
+  padding-left: 50px;
+  padding-right: 60px;
+  background-color: white;
+  box-sizing: border-box;
+  &:last-child {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  span {
+    .container-icon(0, 0);
+  }
+}
+
+.text-box-prev {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: @lilac;
+}
+
+.glyphicon-plus:before {
+  font-size: 27px;
+  color: white;
+
+}
+
+.footer {
+  min-height: 450px;
+  padding-top: 25px;
+  background-color: @black;
+  color: white;
+}
+
+.footer_logo {
+  .cls-1 {
+    fill: white;
+  }
+  .logo_text {
+    color: white;
+  }
+}
+
+.footer_widget1 {
+  li {
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 24px;
+      right: -5px;
+      height: 1px;
+      width: 7px;
+      padding-left: 15px;
+      vertical-align: middle;
+      background-color: #8c8c8d;
+      transform: rotate(90deg);
+    }
+    a {
+      color: white;
+      .linkanimation();
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.footer_widget2 {
+  margin-top: 55px;
+  li {
+    a {
+      color: white;
+
+      &:hover {
+        background-color: transparent;
+      }
+      span {
+        margin-right: 12px;
+
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding-top: 10px;
+    .navbar-default {
+      background: none;
+      border: none;
+      transform: translateY(-53px);
+      overflow-x: hidden;
+      .navbar-collapse {
+        margin-top: 25px;
+        overflow: hidden;
+      }
+    }
+    .nav_main {
+      li {
+        width: 100%;
+        border: none;
+        box-shadow: none;
+      }
+    }
+
+  }
+
+  .logo_tip {
+    font-size: 10px;
+  }
+
+  .hero-image {
+    margin-top: -50px;
+    background-position: 0;
+  }
+
+  .footer {
+    .navbar {
+      text-align: center;
+    }
+    min-height: auto;
+  }
+
+  .footer_widget1, .footer_widget2 {
+    li {
+      display: inline-block;
+      margin-right: 10px;
+
+    }
+  }
+
+  .footer_widget1 {
+    .navbar {
+      margin-bottom: 0;
+    }
+    li:after {
+      display: none;
+    }
+  }
+
+  .footer_widget2 {
+    margin-top: 0;
+  }
+
+}
+
+
+
